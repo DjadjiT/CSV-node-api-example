@@ -5,8 +5,7 @@ const router = Router();
 const axios = require('axios')
 
 router.post('/:blackBoxName/:modelId', (req, res) => {
-  let body = {
-  }
+  let body = req.body
   let url = "http://techsprint-etu.cloudbdf.fr/blackbox_"+req.params.blackBoxName.toLocaleUpperCase()+"/model_"+req.params.modelId
 
   axios.post(
