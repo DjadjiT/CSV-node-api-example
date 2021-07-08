@@ -10,9 +10,13 @@ const fields = [
     value: 'nom colonne à afficher dans le json'
   },
   {
-   label: 'User Id',
-    value: 'userId'
-  }
+    label: 'nom colonne à afficher dans le csv',
+    value: 'nom colonne à afficher dans le json'
+  },
+  {
+    label: 'nom colonne à afficher dans le csv',
+    value: 'nom colonne à afficher dans le json'
+  },
 ];
 
 const headers = {
