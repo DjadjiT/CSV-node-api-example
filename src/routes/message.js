@@ -31,7 +31,7 @@ router.post('/', (req, res) => {
       value: 'userId'
     }
   ];
-  const json2csv = new Parser({ fields });
+  const json2csv = new Parser();
   req.context.models.messages[id] = message;
   const csv = json2csv.parse(message);
   res.header('Content-Type', 'text/csv');
